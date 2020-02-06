@@ -1,0 +1,4 @@
+The raw folder has the raw files created 
+and downloaded files as well inside folders.
+Downloaded files are referenced in the section
+of licences with image names.

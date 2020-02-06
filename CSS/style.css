@@ -1,0 +1,514 @@
+/* ----------------------CSS for the Spash Screen-------------------------------*/
+/* this code is used to spin the icon*/
+.spinner{
+			width: 80px;
+			height: 80px;
+			border: 2px solid #f3f3f3;
+			border-top:3px solid #f25a41;
+			border-radius: 100%;
+			position: absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right: 0;
+			margin: auto;
+			animation: spin 1s infinite linear;
+}
+/* assigning the rotation transformation for spinner*/
+@keyframes spin {
+			from{
+				transform: rotate(0deg);
+			}to{
+				transform: rotate(360deg);
+			}
+}
+#overlay{
+		  height:100%;
+		  width:100%;
+		  background:white;
+		  position:fixed;
+		  left:0;
+		  top:0;
+		  margin: 0px auto;
+}
+/*code for the animating the writer*/
+.typewriter h1 {
+		  overflow: hidden; /* Ensures the content is not revealed until the animation */
+		  border-right: .15em solid orange; /* The typwriter cursor */
+		  white-space: nowrap; /* Keeps the content on a single line */
+		  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		  letter-spacing: .15em; /* Adjust as needed */
+		  animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+		  from { width: 0 }
+		  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+		  from, to { border-color: transparent }
+		  50% { border-color: orange; }
+}
+/*code for image logo*/
+#imagelogo
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+/*--------------------------CSS code for homepage-----------------------*/
+/*css for the images*/
+img
+{
+  width:100%;
+  height:auto;
+}
+/*css for the main container*/
+#mainwindow
+{
+	position: relative;
+    width: 100%;
+    background-size: contain;
+	height:auto;
+	margin:0px auto;
+}
+/*css for the row to have tabular layout*/
+.row
+{
+	display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px;
+}
+/*css for the columns to have the 1/3 width*/
+.column
+{
+	display: table-cell;
+	width:33.3333%;
+	height:auto;
+}
+/*logo to float on the left*/
+#logo
+{
+	float:left;
+}
+/*about us tab to float on the right*/
+#aboutus
+{
+	float:right;
+}
+/*css for the heading class*/
+.heading
+{
+	width:100%;
+	height:auto;
+}
+/*CSS for the footer of homepage*/
+#footer
+{
+width:100%;
+font-size:10px;
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+#mainwindow
+			{
+				position: relative;
+				width: 40%;
+				background-size: contain;
+				height:100%;
+				margin:0px auto;
+			}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+		#mainwindow
+		{
+			position: relative;
+			width: 40%;
+			background-size: contain;
+			height:100%;
+			margin:0px auto;
+		}
+}
+
+/*===============LearningToolsUI==============================*/
+#sound
+{
+	float:right;
+}
+#learningtooldiv1
+{
+	background-color:green;
+}
+#learningtooldiv2
+{
+	background-color:black;
+}
+.subcolumn
+{
+	display: table-cell;
+	width:100%;
+	height:auto;
+}
+#slide
+{
+	width:50%;
+	margin:0px auto;
+	margin-left:25%;
+}
+#slide1
+{
+	width:20%;
+	margin:0px auto;
+	margin-left:40%;	
+}
+#play
+{
+		margin-left:35%;
+}
+
+//****************DrawingBookUI******************//
+canvas { 
+	display: block;
+	margin: 0 auto; 
+	background: #0000; 
+	}
+
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#sketchpad {
+    float:left;
+    height:600px;
+    width:100%;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+#clearbutton {
+    font-size: 15px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background: #eee;
+    border: 1px solid #888;
+}
+
+/****************Matching Game**********************/
+
+#winScreen {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	transition: background .4s;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#winScreen p {
+	color: white;
+	font-size: 60px;
+	transform: translateY(-70vh);
+	user-select: none;
+	text-shadow: 2px 2px 0 black;
+	animation: textDrop 2s;
+}
+
+#intro, #game {
+	width: 95%;
+	text-align: center;
+	margin: 10px auto 0 auto;
+	border: 1px solid black;
+	border-radius: 20px;
+	background: linear-gradient(rgba(70%, 70%, 70%, .2), rgba(70%, 70%, 70%, .3));
+	box-shadow: 2px 2px 1px gray;
+}
+
+#intro span {
+	color: brown;
+	text-shadow:
+		1px 1px black,
+		1px -1px black,
+		-1px 1px black,
+		-1px -1px black;
+}
+
+#game {
+	min-height: 450px;
+	margin-bottom: 10px;
+}
+
+#settings {
+	font-size: 22px;
+	background: rgba(0, 0, 0, .2);
+	width: 300px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#settings button {
+	width: 60px;
+	height: 26px;
+	cursor: pointer;
+}
+
+#play-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tile {
+	height: 110px;
+	width: 110px;
+	margin: 20px;
+	border: 1px solid;
+	background: linear-gradient(rgba(255, 0, 0, .6), brown);
+	cursor: pointer;
+}
+
+.tile p {
+	font-size: 30px;
+	margin: 0;
+	padding: 35%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	filter: blur(20px);
+	user-select: none;
+}
+
+.matched {
+	border-radius: 50%;
+	transition: 1s;
+	background: blue;
+}
+
+.matched p {
+	filter: blur(0px);
+}
+
+@keyframes textDrop {
+	0% {
+		transform: translateY(-70vh);
+	}
+	10% {
+		transform: translateY(-12vh);
+	}
+	90% {
+		transform: translateY(12vh);
+	}
+	100% {
+		transform: translateY(110vh);
+	}
+}
+
+/*********************For Tik Tak Toe Game**********************/
+	
+#myb
+{
+	width:60px;
+	height:40px;
+	font-size:1em;
+}
+#myb1
+{
+	width:60px;
+	height:40px;
+	font-size:1em;
+}
+h2.player1
+{
+	position:absolute;
+	top:43%;
+	left:15%;
+	display:none;}
+h2.player2
+{
+	position:absolute;
+	top:43%;
+	right:15%;
+	display:none;
+}
+.hd{
+	position:absolute;
+	bottom:5%;
+	left:50%;
+}
+
+button
+{
+width:90px;
+height:90px;
+background-color:off white;
+font-size:4em;
+font-weight:bolder;
+}
+/**************************************Drag and Drop************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.row1:after,
+
+.hitbox:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class^="col-"] {
+	float: left;
+}
+
+.col-full {
+	width: 100%;
+}
+
+.col-half {
+	width: 50%;
+}
+
+.col-quarter {
+	width: 24%;
+	margin: 0.5%;
+	background-color: #aaaaaa;
+}
+
+.hitbox {
+	position: relative;
+}
+
+.hitbox:before {
+	display: block;
+	content: "";
+	padding-top: 100%;
+}
+
+.dropzone {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.answer {
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.answer.show {
+	visibility: visible;
+}
+
+.answer.hide {
+	visibility: hidden;
+}
+
+.dropzone:not(.container) .icon {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	background-image: url("../images/raw/draganddrop/putback-bg.png");
+	background-size: 100% 100%;
+}
+
+.icon {
+	width: 24%;
+	margin: 0.5%;
+}
+
+#dropzone-apple {
+	background-image: url("../images/raw/draganddrop/apple-bg.png");
+}
+
+#dropzone-bananas {
+	background-image: url("../images/raw/draganddrop/bananas-bg.png");
+}
+
+#dropzone-carrot {
+	background-image: url("../images/raw/draganddrop/carrot-bg.png");
+}
+
+#dropzone-cherries {
+	background-image: url("../images/raw/draganddrop/cherries-bg.png");
+}
+
+#dropzone-grapes {
+	background-image: url("../images/raw/draganddrop/grapes-bg.png");
+}
+
+#dropzone-lemon {
+	background-image: url("../images/raw/draganddrop/lemon-bg.png");
+}
+
+#dropzone-pear {
+	background-image: url("../images/raw/draganddrop/pear-bg.png");
+}
+
+#dropzone-strawberry {
+	background-image: url("../images/raw/draganddrop/strawberry-bg.png");
+}
+
+#dropzone-tomato {
+	background-image: url("../images/raw/draganddrop/tomato-bg.png");
+}
+
+#dropzone-watermelon {
+	background-image: url("../images/raw/draganddrop/watermelon-bg.png");
+}
+
+.instructions {
+	text-align: center;
+}
+
+@media(max-width: 799px) {
+	.col-quarter {
+	width: 49%;
+}
+
+.icon {
+	width: 49%;
+}
+
+.col-half.hitbox {
+	padding-top: 100%;
+	}
+}
+
+/***************quiz and countingquiz****************/
+#buttonquiz
+{
+	font-size:12px;
+	height:20px;
+	width:100px;
+}

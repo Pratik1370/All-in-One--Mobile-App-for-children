@@ -1,0 +1,67 @@
+StudentID: 217416941
+StudentName: Pratik Bhandari
+App Name: All in One: Ultimate App for Children
+
+Week3
+- File Structure/Directories Created
+- Logo created
+- Mockup Design Sketches Prepared
+- Images has been placed on respective files
+
+Week 4
+- Raw images are designed and created
+- Home Page design coding done as per the mock up design
+- First three functionalities working on progress
+
+Week 5 
+-Raw images created for 3 functionalities which nearly is more than
+30 and each images are made into png removing backgrounds and raw images
+more than 30 are again created for placing in functionalities.
+-Functionalities of learning alphabets created.
+-Functionalities of learning numbers created.
+-Functionalities of quiz as testing tool created.
+-UI of three working functionalities are separately created and 
+will be made exactly into working pattern at release 1.0 along with 
+stylings done.
+- As per milestones declared 3 working functionalities are created
+and testing on progress to launch version 1.0
+- Next three major functionalities of application on progress which
+are other learning mini applications.
+
+
+Week6
+Layout of bodyparts, days, months, vegetables, shapes and vehicles learning parts has been created.
+Memory tool, practicising tool has been created
+A prototype of game with 60% fully functional modules will be created by next week.
+Remaining tools of enhancing levels and features add ons on progress.
+
+Week7
+Just one functionality of application is remained functionality wise for completion.
+Splash screen added
+Working on indentation, code optimization, comments, and organising css, js and html files separately 
+and licence updation for referred images, and materials.
+
+
+Week8
+DrawingBook in canvas is in progress.
+Functionality of all sub functions are prepared.
+Code alignment and organisation of all files will be prepared by end of this week.
+
+
+Week9
+Final updates of the application is being presented with all mockup reviews and matchings.
+All functionalities are working great.
+New entertainment features are being included.
+Few functionalities work is in progress and will be updated very soon of entertainment features.
+Video and complete readme along with app will be uploaded before Friday, 18/05/2018 5pm.
+
+Week10
+All functionality has been added.
+Readme file has been created.
+Video Demostration has been created.
+Marking Justification has been made.
+
+New Submission Detail:
+As my previous section has multiple HTML files
+hence i have included this submission with just one HTML
+index file.

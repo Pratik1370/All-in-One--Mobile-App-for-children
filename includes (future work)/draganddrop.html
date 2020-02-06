@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script src="draganddropfruitsUI.js"></script>
+		<script src="../js/UI/learningToolsUI.js"></script>
+		<script src="../js/UI/UI.js"></script>
+		<title>Drag and Drop Kids Challenge!</title>
+</head>
+
+<body>
+<div id="mainwindow" class="mainwindow">
+	<div id="header" class="row" style="background-color: yellow;">
+		<div id="logo" class="column">
+			<a href="../includes/homepage.html">
+				<img src="../images/raw/logo.png" id="logo" class="logo">
+			</a>
+		</div>
+		<div id="gamename" class="column"><img src="../images/raw/draganddroptitle.png" width="" height="" alt="" id="logo" class="logo">
+		</div>
+		<div id="sound" class="column">
+			<h3 id="home" class="about">
+				<a href="../includes/homepage.html">
+				Home
+				</a>
+			</h3>
+		</div>
+	</div>
+	<div class="row1">
+			<div class="col-full instructions">
+				<h1>Your score is <span id="score">0</span>/10.</h1>
+			</div>
+	</div>
+	<div class="row1">
+			<div class="col-half instructions">
+				<h1>Drop</h1>
+			</div>
+			<div class="col-half instructions">
+				<h1>Drag</h1>
+			</div>
+	</div>
+		
+	<div class="row1">
+		<div id="dropzone-holder" class="col-half">
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-apple" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-bananas" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-carrot" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-cherries" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-grapes" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-lemon" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-pear" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-strawberry" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-tomato" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+				<div class="col-quarter hitbox">
+					<img class="answer hide" src="../images/raw/draganddrop/correct-green.png" />
+					<div id="dropzone-watermelon" class="dropzone" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">				
+					</div>
+				</div>
+		</div>
+			
+			<div class="col-half hitbox" >
+				<div id="dropzone-container" class="dropzone container" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+					<img id="icon-apple" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/apple.png">
+					<img id="icon-bananas" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/bananas.png">
+					<img id="icon-carrot" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/carrot.png">
+					<img id="icon-cherries" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/cherries.png">
+					<img id="icon-grapes" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/grapes.png">
+					<img id="icon-lemon" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/lemon.png">
+					<img id="icon-pear" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/pear.png">
+					<img id="icon-strawberry" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/strawberry.png">
+					<img id="icon-tomato" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/tomato.png">
+					<img id="icon-watermelon" class="icon" draggable="true" ondragstart="return start(event)" ondragend="return end(event)" src="../images/raw/draganddrop/watermelon.png">
+				</div>
+			</div>
+		
+	</div>
+	<div id="footer" class="footer">
+		<h3 id="ftext" class="ftext">
+			ALL RIGHTS RESERVED @ PRATIK, pbhand@deakin.edu.au, SID: 217416941
+		</h3>
+	</div>
+</div>
+</body>
+</html>
